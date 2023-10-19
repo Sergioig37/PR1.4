@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesFormulario.css">
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="cuerpoPrincipal">
+        <header class="cabecera">
+            <h1 class="nombre">Videojuegos</h1>
+            <nav class="navegacion">
+                <button id="boton" class="botonColor2">Cambio colores</button>
+                <a href="">Noticias</a>
+                <a href="">Anuncios</a>
+                <a href="">Blog</a>
+                <a href="indexFormulario.html">Contacto</a>
+            </nav>
+            <button id="boton" class="botonColor">Cambio colores</button>
+            <p class="subtexto">Juegos y suscripciones</p>
+        </header>
+        <main class="principal"> 
+            <div class="textoBajo1s">
+                <h2>Rellena el siguiente formulario</h2>
+            </div>
+            <form name="Contacto" data-netlify="true" method="POST">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <div class="nombreFormulario">
+                        <label for="nombre">Nombre: </label>
+                        <br>
+                        <input type="text" id="nombreid" name="nombre" minlength="3" maxlength="20" required>
+                    </div>
+                    <br>
+                    <div class="emailFormulario">
+                        <label for="email">Email: </label>
+                        <br>
+                        <input type="email" id="emailid" name="email">
+                    </div>
+                    <br>
+                    <div class="telefonoFormulario">
+                        <label for="telefono">Telefono: </label>
+                        <br>
+                        <input type="text" id="telefonoid" name="telefono" pattern="[0-9]{9}">
+                    </div>
+                    <br>
+                    <div class="mensajeFormulario">
+                        <label for="mensaje">Mensaje: </label>
+                        <br>
+                        <textarea cols="10" rows="10" name="mensaje"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="infoFormulario">
+                    <legend>Información sobre juego</legend>
+                    <div class="ventaFormulario">
+                        <label for="vendeOcompra">Vende o Compra</label>
+                        <br>
+                        <select name="vendeOcompra">
+                            <option value="1">Vender</option>
+                            <option value="2">Comprar</option> 
+                       </select>
+                       <br>
+                    </div>
+
+                    <div class="presupuestoFormulario">
+                        <label for="presupuesto">Presupuesto: </label>
+                        <br>
+                       <input type="number" id="presupuestoid" name="presupuesto" min="1000" max="100000">
+                    </div>
+                </fieldset>
+                <fieldset class="contacto">
+                    <legend>Contacto</legend>
+                    <div class="modoContacto">
+                        <p>Escoja método de contacto</p>
+                        <label for="modo">Email</label>
+                        <br>
+                        <input type="radio" id="radioEmail" name="modo" class="radioEmail">
+                        <br>
+                        <label for="modo"> Teléfono  </label>
+                        <br>
+                        <input type="radio" id="radioTelefono" name="modo" class="radioTelefono">
+                    </div>
+                    
+                    <div class="horaYhora">
+                        <p>Si eligió teléfono escoja una fecha y hora</p>
+                        <label for="fecha">Fecha :</label>
+                        <br>
+                        <input type="date" id="fechaid" name="fecha" min="2023-10-19">
+                        <label for="hora">Hora: </label>
+                        <input type="time" id="horaid" name="hora">
+                    </div>
+                    <button type="submit" class="boton">Enviar</button>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

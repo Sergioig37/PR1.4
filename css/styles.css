@@ -1,0 +1,264 @@
+
+body{
+    background-color: black;
+    display: flex;
+}
+
+
+:root{
+    --mainLogos-color: #62B225;
+    --mainBotones-color: #aae280;
+    --sizeTextoBotones-font-size: 20px;
+    --heightBotones-height: 40%;
+    --widthBotones-width: 70%;
+    --articulosImagen-color: #f6dddd;
+    --fuenteParrafos-font: letrasJoven;
+    --color: black;
+    --fondo: white;
+    --colorBorde: black;
+    
+}
+
+@font-face{
+    font-family: "letrasJoven";
+    src: url(/fuentes/Mulish-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: "TextosGrandes";
+    src: url(/fuentes/AutourOne-Regular.ttf);
+}
+
+
+
+.cuerpoPrincipal{
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondo);
+    padding: 0;
+    color: var(--color);
+    border: 1px solid var(--colorBorde);
+}
+
+.cabecera{
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.3);
+    display: flex;
+    height: 250px;
+    background: url(/imagenes/mandoheader.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    flex-direction: column;
+}
+.navegacion{
+    margin-bottom: 35px;
+    align-self: flex-end;
+    width: max-content;
+   
+}
+.nombre{
+    width: max-content;
+    margin-left: 20px;
+    color: white;
+   
+}
+a{
+    margin-right: 5px;
+    color: white;
+}
+
+.subtexto{
+    width: min-content;
+    margin-left: 20px;
+    font-size: 30px;
+    padding:auto;
+   
+}
+
+.principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoBajo1{
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+.seccionLogos{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.articulosLogo{
+    height: 100%;
+    width: 30%;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pLogo{
+    margin:10px;
+    width: auto;
+    text-align: center;
+    height: 20%;
+}
+
+.seccionImagenes{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    color: black;
+   
+}
+.articuloImagenes{
+    height: 100%;
+    width: 35%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: var(--articulosImagen-color);
+}
+
+.pImagen{
+    text-align: center;
+}
+
+.bg3{
+    height: 180px;
+    width: 100%;
+    border: 1px solid black;
+}
+.ms2{
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+}
+.tlou1{
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+}
+.boton{
+    background-color: var(--mainBotones-color);
+    width: var(--widthBotones-width);
+    height: var(--heightBotones-height);
+    font-size: var(--sizeTextoBotones-font-size);
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.logosPequeños{
+    width: auto;
+    height: min-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccionImagenes i{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p{
+    font-family: var(--fuenteParrafos-font);
+}
+h1{
+    font-family: TextosGrandes;
+}
+h2{
+    font-family: TextosGrandes;
+}
+h3{
+    font-family: TextosGrandes;
+}
+i{
+    font-family: IcoFont;
+    font-size: 80px;
+    color: var(--mainLogos-color);
+}
+
+.pImagen{
+    width: auto;
+    
+}
+
+.colorResaltado{
+    color: green;
+}
+
+.botonColor{
+    width: 150px;
+    height: 30px;
+    margin: auto;
+   align-self: flex-end;
+   display: none;
+}
+
+
+
+@media screen and (max-width: 720px){
+
+    .cabecera{
+        flex-direction: column;
+       align-items: center;
+       justify-content: flex-end;
+    }
+    .nombre{
+        margin: 0;
+    }
+    .subtexto{
+        align-self: center;
+        margin: 0;
+        margin-top: 150px
+    }
+    .navegacion{
+        display: none;
+    }
+    .botonColor{
+        margin-bottom: -40px;
+        margin-top: 20px;
+    }
+    .botonColor{
+        display: block;
+    }
+    .cuerpoPrincipal{
+        height: auto;
+    }
+    .principal{
+        height: auto;
+    }
+    .seccionLogos{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .articuloLogo{
+        width: 100%;
+        height: auto;
+        
+    }
+    .seccionImagenes{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .articuloImagenes{
+        width: 90%;
+    }
+    .boton{
+        margin-bottom: 10px;
+    }
+}
