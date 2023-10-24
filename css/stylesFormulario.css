@@ -55,7 +55,8 @@ body{
     margin-bottom: 35px;
     align-self: flex-end;
     width: max-content;
-   
+    position:fixed;
+    top: 0px;
 }
 .nombre{
     width: max-content;
@@ -73,8 +74,10 @@ a{
     margin-left: 20px;
     font-size: 30px;
     padding:auto;
-   
+    position: relative;
+    bottom: -60px;
 }
+
 
 .principal{
     width: 100%;
@@ -176,6 +179,49 @@ legend{
    display: none;
 }
 
+
+.menuPrincipal{
+    display: inline;
+    list-style: none;
+    background-color: black;
+}
+
+.menuPrincipal li{
+    display: inline;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+     padding: 10%; 
+     
+}
+
+.menuPrincipal > li:hover .submenu {
+    display: block;
+    background-color: black;
+}
+
+.menuPrincipal > li.liNoticias:hover .submenu.Noticias >li{
+    display: block;
+    background-color: black;
+    margin: 10% auto;
+    padding: 10% auto;
+}
+
+.menuPrincipal > li.liAnuncios:hover .submenu.Anuncios >li{
+    display: block;
+    background-color: black;
+    margin: 10% auto;
+    padding: 10% auto;
+}
+
+.iconoPermanente{
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    font-size: 50px;
+}
 
 
 @media screen and (max-width: 720px){
